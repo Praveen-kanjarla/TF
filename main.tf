@@ -4,5 +4,9 @@ provider "aws"{
 
 resource "aws_instance" "praveen_1st_server"{
   ami = "ami-04505e74c0741db8d"
-  intance_type = "t2.micro"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name ="TF-instance"
+}
 }
